@@ -1,0 +1,42 @@
+:root {
+  color-scheme: light;
+  --bg: #ffffff;
+  --fg: #1b1f24;
+  --muted: #57606a;
+  --panel: #f6f8fa;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #0d1117;
+  --fg: #e6edf3;
+  --muted: #9da7b3;
+  --panel: #161b22;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+main {
+  padding: 24px;
+  max-width: 720px;
+}
+
+#status {
+  color: var(--muted);
+}
+
+pre {
+  padding: 12px;
+  border-radius: 6px;
+  background: var(--panel);
+  overflow: auto;
+}
+
+#error {
+  color: #cf222e;
+}

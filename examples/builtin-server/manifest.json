@@ -1,0 +1,11 @@
+{
+  "$schema": "https://raw.githubusercontent.com/rante-corporation/rante-apps-sdk/main/schema/manifest.schema.json",
+  "manifestVersion": 1,
+  "id": "3f2b8c1e-7d4a-4e9b-a6c5-1d2e3f4a5b6c",
+  "name": "External app example",
+  "version": "1.0.0",
+  "description": "Gets an access token from Rante and shows what the app's server saw.",
+  "hosting": "external",
+  "entryPoint": "https://your-app.example.com/",
+  "permissions": ["user.read", "tenant.read", "auth.token"]
+}

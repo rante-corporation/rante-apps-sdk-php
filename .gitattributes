@@ -1,0 +1,5 @@
+# Text files are stored with LF line endings.
+* text=auto eol=lf
+
+# Packages are binary ZIP archives.
+*.rante binary

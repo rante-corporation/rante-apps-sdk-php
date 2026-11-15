@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="rante-app-id" content="__RANTE_CLIENT_ID__">
+  <title>Rante external app example</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/rante-sdk.js"></script>
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>External app example</h1>
+    <p id="status">Connecting to Rante...</p>
+    <section id="result" hidden>
+      <h2>What the server saw</h2>
+      <p>The page asked Rante for an access token and sent it to <code>/api/me</code>. The server checked it with the
+        Rante Apps server SDK and answered:</p>
+      <pre id="me"></pre>
+    </section>
+    <p id="error" role="alert" hidden></p>
+  </main>
+</body>
+</html>
