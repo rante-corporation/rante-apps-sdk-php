@@ -54,6 +54,7 @@ final class ConformanceTest extends TestCase
         $token = self::$login->buildToken($doc, $case, $now);
         if ($case['expect'] === null) {
             $principal = $verifier->verify($token);
+            $this->assertSame(strtolower($doc['tenantId']), $principal->tenantId);
             foreach (LocalLogin::resolve($doc, $case['principal'] ?? [], $now) as $field => $value) {
                 $this->assertSame($value, $principal->{$field}, $field);
             }
